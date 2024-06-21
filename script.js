@@ -11,6 +11,9 @@ document.getElementById('weatherForm').addEventListener('submit', function(e) {
                 document.getElementById('cityName').innerText = `Cidade: ${data.name}`;
                 document.getElementById('temperature').innerText = `Temperatura: ${data.main.temp}°C`;
                 document.getElementById('description').innerText = `Descrição: ${data.weather[0].description}`;
+                document.getElementById('windSpeed').innerText = `Velocidade do vento: ${data.wind.speed} m/s`;
+                document.getElementById('humidity').innerText = `Umidade: ${data.main.humidity}%`;
+                document.getElementById('sunny').innerText = data.weather[0].main.toLowerCase() === 'clear' ? 'Está ensolarado' : 'Não está ensolarado';
                 document.getElementById('weatherResult').style.display = 'block';
             } else {
                 alert('Cidade não encontrada');
