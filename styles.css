@@ -6,6 +6,10 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+
+    background-image: url(./fundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .container {
@@ -17,6 +21,7 @@ body {
     text-align: center;
     max-width: 400px;
     width: 100%;
+    border: 2px solid aquamarine;
 }
 
 h1 {
@@ -41,6 +46,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 button:hover {
